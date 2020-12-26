@@ -23,8 +23,9 @@ print 'roll = ', math.degrees(roll), 'pitch = ', math.degrees(pitch),'yaw = ', m
 quaternion = tf.transformations.quaternion_from_euler(roll, pitch, yaw)
 print('-----------------------------------------')
 print 'The resulting quaternion using "quaternion_from_euler" function: '
-for i in range(4):
-	print quaternion[i]
+
+for i in quaternion:
+	print i
 
 
 #quaternion[0] = -3.88256895463e-06
