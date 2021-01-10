@@ -19,6 +19,7 @@ yaw = math.radians(58)
 #we print these three angles
 print ('roll = {}, pitch = {}, yaw = {}'.format(math.degrees(roll),math.degrees(pitch),math.degrees(yaw)))
 
+
 #convert the roll-pitch-yaw angles to a quaternion using ROS TF Library
 quaternion = tf.transformations.quaternion_from_euler(roll, pitch, yaw)
 print('-----------------------------------------')
